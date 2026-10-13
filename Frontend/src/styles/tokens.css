@@ -1,0 +1,204 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* Header tokens (Light Theme: Light Mint Green) */
+    --header-bg: #DCFCE7;
+    --header-fg: #14532D;
+    --header-fg-muted: #166534;
+    --header-active-bg: #BBF7D0;
+    --header-border: #BBF7D0;
+    --header-ring: #15803D;
+
+    /* Body & Surface tokens (Light Theme) */
+    --bg: #FAFAF9;
+    --surface: #FFFFFF;
+    --surface-muted: #F5F5F4;
+    --fg: #0C0A09;
+    --fg-muted: #57534E;
+    --border: #D6D3D1;
+    --primary: #1C1917;
+    --on-primary: #FFFFFF;
+    --accent: #A16207;
+    --on-accent: #FFFFFF;
+    --success: #15803D;
+    --warning: #B45309;
+    --danger: #DC2626;
+    --ring: #A16207;
+    --scrim: rgba(12, 10, 9, 0.55);
+  }
+
+  .dark {
+    /* Header tokens (Dark Theme: Deep Forest Green) */
+    --header-bg: #14532D;
+    --header-fg: #F0FDF4;
+    --header-fg-muted: #BBF7D0;
+    --header-active-bg: #166534;
+    --header-border: #166534;
+    --header-ring: #86EFAC;
+
+    /* Body & Surface tokens (Dark Theme) */
+    --bg: #0C0A09;
+    --surface: #1C1917;
+    --surface-muted: #292524;
+    --fg: #FAFAF9;
+    --fg-muted: #A8A29E;
+    --border: #3A3532;
+    --primary: #FAFAF9;
+    --on-primary: #0C0A09;
+    --accent: #CA8A04;
+    --on-accent: #0C0A09;
+    --success: #4ADE80;
+    --warning: #FBBF24;
+    --danger: #F87171;
+    --ring: #CA8A04;
+    --scrim: rgba(0, 0, 0, 0.70);
+  }
+
+  * {
+    border-color: var(--border);
+  }
+
+  body {
+    background-color: var(--bg);
+    color: var(--fg);
+    font-family: 'IBM Plex Sans Thai', system-ui, -apple-system, sans-serif;
+    scroll-padding-top: 5rem;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', 'IBM Plex Sans Thai', sans-serif;
+  }
+}
+
+/* Custom Tailwind utility classes mapping to design tokens */
+.bg-header { background-color: var(--header-bg); }
+.text-header { color: var(--header-fg); }
+.text-header-muted { color: var(--header-fg-muted); }
+.bg-header-active { background-color: var(--header-active-bg); }
+.border-header { border-color: var(--header-border); }
+
+.bg-bg { background-color: var(--bg); }
+.bg-surface { background-color: var(--surface); }
+.bg-surface-muted { background-color: var(--surface-muted); }
+.text-fg { color: var(--fg); }
+.text-fg-muted { color: var(--fg-muted); }
+.border-border { border-color: var(--border); }
+
+.bg-primary-token { background-color: var(--primary); }
+.text-primary-token { color: var(--primary); }
+.text-on-primary { color: var(--on-primary); }
+
+.bg-accent-token { background-color: var(--accent); }
+.text-accent-token { color: var(--accent); }
+.text-on-accent { color: var(--on-accent); }
+
+.text-success { color: var(--success); }
+.bg-success { background-color: var(--success); }
+.text-warning { color: var(--warning); }
+.bg-warning { background-color: var(--warning); }
+.text-danger { color: var(--danger); }
+.bg-danger { background-color: var(--danger); }
+
+/* Glass backdrop utilities */
+.glass-panel {
+  background-color: rgba(var(--surface), 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/* Dynamic Add-to-Cart fly animation micro-interactions */
+@keyframes cart-bump {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.22) rotate(-6deg);
+  }
+  50% {
+    transform: scale(0.94) rotate(3deg);
+  }
+  75% {
+    transform: scale(1.06) rotate(-1deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+@keyframes badge-pop {
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.45);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-cart-bump {
+  animation: cart-bump 450ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.animate-badge-pop {
+  animation: badge-pop 350ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Fire flicker animation for ranking flame icons */
+@keyframes fire-flicker {
+  0%, 100% {
+    transform: scale(1) rotate(-3deg);
+    filter: drop-shadow(0 0 4px rgba(249, 115, 22, 0.9));
+  }
+  25% {
+    transform: scale(1.18) rotate(3deg);
+    filter: drop-shadow(0 0 8px rgba(251, 146, 60, 1)) drop-shadow(0 0 12px rgba(239, 68, 68, 0.7));
+  }
+  50% {
+    transform: scale(0.95) rotate(-2deg);
+    filter: drop-shadow(0 0 4px rgba(249, 115, 22, 0.8));
+  }
+  75% {
+    transform: scale(1.12) rotate(2deg);
+    filter: drop-shadow(0 0 7px rgba(251, 146, 60, 0.95)) drop-shadow(0 0 10px rgba(245, 158, 11, 0.6));
+  }
+}
+
+.animate-fire-flicker {
+  animation: fire-flicker 1.6s infinite ease-in-out;
+}
+
+/* Flowing fire gradient for card top frame rim */
+@keyframes fire-rim-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-fire-rim {
+  background-size: 200% 200%;
+  animation: fire-rim-flow 2.5s ease infinite;
+}
+
+/* Gold glow pulse for Rank 1 Badge */
+@keyframes gold-pulse {
+  0%, 100% {
+    box-shadow: 0 0 12px rgba(245, 158, 11, 0.45), 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+  50% {
+    box-shadow: 0 0 22px rgba(245, 158, 11, 0.85), 0 4px 16px rgba(234, 88, 12, 0.45);
+  }
+}
+
+.animate-gold-pulse {
+  animation: gold-pulse 2s infinite ease-in-out;
+}
+

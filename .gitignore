@@ -1,0 +1,39 @@
+# Agent instructions & skills (specifically excluded)
+.agent/
+.agents/
+
+# Dependencies
+node_modules/
+Frontend/node_modules/
+Backend/node_modules/
+
+# Production build outputs
+dist/
+Frontend/dist/
+Backend/dist/
+dist-ssr/
+*.local
+
+# Environment & secrets
+.env
+Backend/.env
+*.env.local
+
+# TypeScript build info
+*.tsbuildinfo
+Frontend/tsconfig.tsbuildinfo
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor & OS artifacts
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db

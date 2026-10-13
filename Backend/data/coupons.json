@@ -1,0 +1,49 @@
+{
+  "coupons": [
+    {
+      "id": "cpn_f3fc5249",
+      "code": "NEW20",
+      "title": "New member 11 Baht",
+      "description": "",
+      "type": "fixed",
+      "value": 11,
+      "minSpend": 0,
+      "maxDiscount": 200,
+      "startsAt": "2026-10-12T09:36:48.954Z",
+      "expiresAt": "2026-11-11T09:36:48.954Z",
+      "usageLimit": 500,
+      "usedCount": 0,
+      "active": true
+    },
+    {
+      "id": "cpn_5f7817c6",
+      "code": "DIST20",
+      "title": "Discount for 20%",
+      "description": "",
+      "type": "percent",
+      "value": 20,
+      "minSpend": 100,
+      "maxDiscount": 500,
+      "startsAt": "2026-10-12T09:37:56.560Z",
+      "expiresAt": "2026-11-11T09:37:56.560Z",
+      "usageLimit": 500,
+      "usedCount": 0,
+      "active": true
+    },
+    {
+      "id": "cpn_fa8c03f8",
+      "code": "HELLO10",
+      "title": "Discount 10%",
+      "description": "",
+      "type": "percent",
+      "value": 10,
+      "minSpend": 0,
+      "maxDiscount": 1000,
+      "startsAt": "2026-10-12T09:38:41.377Z",
+      "expiresAt": "2026-11-11T09:38:41.377Z",
+      "usageLimit": 500,
+      "usedCount": 0,
+      "active": true
+    }
+  ]
+}

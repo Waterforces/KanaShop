@@ -1,0 +1,11 @@
+{
+  "payment": {
+    "promptPayId": "0952402373",
+    "accountName": "KanaShop Official",
+    "bankName": "PromptPay / Kasikorn Bank",
+    "updatedAt": "2026-10-07T17:35:12.897Z",
+    "originalQrImageUrl": "/uploads/settings/1791394508482-wn7b8jj7.jpg",
+    "qrImageUrl": "/uploads/settings/cropped-1791394508482-wn7b8jj7.png",
+    "rawPayload": "00020101021129390016A000000677010111031500499913684071653037645802TH63044B98"
+  }
+}

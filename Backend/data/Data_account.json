@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "accounts": [
+    {
+      "id": "usr_admin_kana",
+      "role": "admin",
+      "fullName": "Kana Admin",
+      "email": "admin_kana@kanashop.com",
+      "phone": "0819998888",
+      "photoUrl": "/uploads/avatars/white_avatar.png",
+      "thaiId": {
+        "masked": "1-1037-xxxxx-56-8",
+        "cipher": ""
+      },
+      "username": "admin_kana",
+      "passwordHash": "$2a$12$2i6aQjEtz/avEKszElbNS.E6xdypP1PGmfFH9BvtLBEYK8cUn8Aqy",
+      "status": "active",
+      "suspendedUntil": null,
+      "banReason": null,
+      "preferences": {
+        "theme": "light"
+      },
+      "collectedCoupons": [],
+      "createdAt": "2026-10-12T16:30:00.000Z",
+      "updatedAt": "2026-10-12T16:30:00.000Z",
+      "passwordChangedAt": null,
+      "lastLoginAt": null
+    }
+  ]
+}

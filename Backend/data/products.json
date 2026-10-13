@@ -1,0 +1,123 @@
+{
+  "products": [
+    {
+      "id": "prd_aa873e6c4d",
+      "title": "Large Bottle",
+      "description": "กระติกทำจากแสตนเลสเกรด 316 สามารถเก็บน้ำแข็งได้นานสูงสุด 2 วัน",
+      "category": "plain",
+      "subcategory": "ss316",
+      "capacityOz": 1,
+      "price": 150,
+      "stock": 10,
+      "salesVolume": 0,
+      "images": [
+        "/uploads/products/1791812761220-wlyos1oc.jpg"
+      ],
+      "active": true,
+      "createdAt": "2026-10-12T13:46:01.230Z",
+      "updatedAt": "2026-10-12T13:46:01.230Z"
+    },
+    {
+      "id": "prd_43b314aaf3",
+      "title": "กระติกแบบมีหูหิ้ว",
+      "description": "-",
+      "category": "plain",
+      "subcategory": "ss316",
+      "capacityOz": 900,
+      "price": 150,
+      "stock": 20,
+      "salesVolume": 0,
+      "images": [
+        "/uploads/products/1791812852502-amjiugul.jpg"
+      ],
+      "active": true,
+      "createdAt": "2026-10-12T13:47:32.511Z",
+      "updatedAt": "2026-10-12T13:47:32.511Z"
+    },
+    {
+      "id": "prd_40ed35afa2",
+      "title": "Mahobin bottle",
+      "description": "มีลิขสิทธิ์แท้จาก mahobin",
+      "category": "licensed",
+      "subcategory": "stainless_steel",
+      "capacityOz": 900,
+      "price": 330,
+      "stock": 8,
+      "salesVolume": 0,
+      "images": [
+        "/uploads/products/1791812950702-j9bp6r8j.jpg"
+      ],
+      "active": true,
+      "createdAt": "2026-10-12T13:49:10.846Z",
+      "updatedAt": "2026-10-12T13:49:10.846Z"
+    },
+    {
+      "id": "prd_3e6b995daa",
+      "title": "กระติกน้ำ cille",
+      "description": "",
+      "category": "licensed",
+      "subcategory": "stainless_steel",
+      "capacityOz": 1000,
+      "price": 200,
+      "stock": 20,
+      "salesVolume": 0,
+      "images": [
+        "/uploads/products/1791813014932-moj1ekqx.jpg"
+      ],
+      "active": true,
+      "createdAt": "2026-10-12T13:50:14.937Z",
+      "updatedAt": "2026-10-12T13:50:14.937Z"
+    },
+    {
+      "id": "prd_3d27a99b4c",
+      "title": "Kids bottle",
+      "description": "-",
+      "category": "licensed",
+      "subcategory": "stainless_steel",
+      "capacityOz": 700,
+      "price": 290,
+      "stock": 15,
+      "salesVolume": 0,
+      "images": [
+        "/uploads/products/1791813071982-c1a5zepy.jpg"
+      ],
+      "active": true,
+      "createdAt": "2026-10-12T13:51:12.021Z",
+      "updatedAt": "2026-10-12T13:51:12.021Z"
+    },
+    {
+      "id": "prd_623e411498",
+      "title": "Sario bottle",
+      "description": "-",
+      "category": "licensed",
+      "subcategory": "stainless_steel",
+      "capacityOz": 700,
+      "price": 320,
+      "stock": 16,
+      "salesVolume": 0,
+      "images": [
+        "/uploads/products/1791813140264-3qgtbmol.jpg"
+      ],
+      "active": true,
+      "createdAt": "2026-10-12T13:52:20.313Z",
+      "updatedAt": "2026-10-12T13:52:20.313Z"
+    },
+    {
+      "id": "prd_109a8275ff",
+      "title": "กระติกน้ำแสตนเลส",
+      "description": "",
+      "category": "licensed",
+      "subcategory": "ceramic",
+      "capacityOz": 700,
+      "price": 260,
+      "stock": 20,
+      "salesVolume": 0,
+      "images": [
+        "/uploads/products/1791813192330-4j1hjcxc.jpg"
+      ],
+      "active": true,
+      "createdAt": "2026-10-12T13:53:12.333Z",
+      "updatedAt": "2026-10-12T13:53:12.333Z"
+    }
+  ]
+}

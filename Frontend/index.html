@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2314532D'><path d='M7 2h10a1 1 0 0 1 1 1v2H6V3a1 1 0 0 1 1-1zm11 4H6v12a4 4 0 0 0 4 4h4a4 4 0 0 0 4-4V6z'/></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KanaShop — Premium Insulated Drinkware & Tumblers</title>
+
+    <!-- Google Fonts: Outfit + IBM Plex Sans Thai -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Prevent Theme Flash -->
+    <script>
+      (function () {
+        try {
+          const stored = localStorage.getItem('kanashop_theme');
+          const isDark =
+            stored === 'dark' ||
+            (!stored && window.matchMedia('(prefers-color-scheme: dark)').matches);
+          if (isDark) {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        } catch (_) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-bg text-fg min-h-screen font-body antialiased transition-colors duration-200">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
